@@ -1,0 +1,640 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ==========================================================
+         CONFIGURATION GÉNÉRALE
+         ========================================================== -->
+    <!-- Encodage des caractères -->
+    <meta charset="UTF-8">
+    <!-- Adaptation aux mobiles, tablettes et ordinateurs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Couleur du navigateur sur mobile -->
+    <meta name="theme-color" content="#d71920">
+    <!-- ==========================================================
+         FAVICON / LOGO
+         ========================================================== -->
+    <link
+        rel="icon"
+        href="Images/LOGO.jpeg"
+        type="image/jpeg">
+    <!-- ==========================================================
+         POLICE GOOGLE : INTER
+         ========================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- ==========================================================
+         FONT AWESOME
+         ========================================================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ==========================================================
+         AOS : ANIMATIONS AU DÉFILEMENT
+         ========================================================== -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- ==========================================================
+         FEUILLE DE STYLE PRINCIPALE
+         ========================================================== -->
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+    <!-- ==========================================================
+         INFORMATIONS SEO
+         ========================================================== -->
+    <title>
+        Services | Côté Alu-CI SARL
+    </title>
+    <meta
+        name="description"
+        content="Portes, fenêtres, baies vitrées, cloisons, garde-corps, vérandas, pose et rénovation.">
+    <link
+        rel="canonical"
+        href="https://www.cotealu-ci.com/services.html">
+</head>
+<body>
+    <!-- ==========================================================
+         HEADER / EN-TÊTE DU SITE
+         ========================================================== -->
+    <header>
+        <!-- ======================================================
+             BARRE SUPÉRIEURE
+             ====================================================== -->
+        <div class="topbar">
+            <div class="container">
+                <!-- Adresse de l'entreprise -->
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Port-Bouët — Anani Rond-point
+                </span>
+                <!-- Numéros de téléphone -->
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                    05 84 13 55 69 | 07 19 91 39 27
+                </span>
+            </div>
+        </div>
+        <!-- ======================================================
+             MENU DE NAVIGATION
+             ====================================================== -->
+        <nav class="navbar">
+            <div class="container nav-wrap">
+                <!-- =================================================
+                     LOGO
+                     ================================================= -->
+                <a
+                    class="logo"
+                    href="index.html">
+                    <!-- Symbole du logo -->
+                    <div class="logo-mark">
+                        CA
+                    </div>
+                    <!-- Nom de l'entreprise -->
+                    <div class="logo-text">
+                        <span>
+                            Côté Alu-CI SARL
+                        </span>
+                        <small>
+                            MENUISERIE ALUMINIUM
+                        </small>
+                    </div>
+                </a>
+                <!-- =================================================
+                     BOUTON MENU MOBILE
+                     ================================================= -->
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- =================================================
+                     LIENS DE NAVIGATION
+                     ================================================= -->
+                <div class="nav-links">
+                    <!-- Accueil -->
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                    <!-- À propos -->
+                    <a href="a-propos.html">
+                        À propos
+                    </a>
+                    <!-- Page actuelle -->
+                    <a
+                        class="active"
+                        href="services.html">
+                        Nos services
+                    </a>
+                    <!-- Réalisations -->
+                    <a href="realisations.html">
+                        Réalisations
+                    </a>
+                    <!-- Contact -->
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                    <!-- Bouton WhatsApp -->
+                    <a
+                        class="btn btn-red"
+                        href="https://wa.me/2250719913927"
+                        target="_blank"
+                        rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Devis WhatsApp
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ==========================================================
+         HERO DE LA PAGE
+         ========================================================== -->
+    <section class="page-hero">
+        <div class="container">
+            <!-- Fil d'Ariane -->
+            <div class="breadcrumb">
+                Accueil / Nos services
+            </div>
+            <!-- Titre principal -->
+            <h1 data-aos="fade-up">
+                Nos services
+            </h1>
+            <!-- Description -->
+            <p data-aos="fade-up">
+                Des solutions aluminium sur mesure pour particuliers,
+                professionnels et projets immobiliers.
+            </p>
+        </div>
+    </section>
+    <!-- ==========================================================
+         SECTION : NOS SERVICES
+         ========================================================== -->
+    <section class="section">
+        <div class="container">
+            <!-- ==================================================
+                 GRILLE DES SERVICES
+                 ================================================== -->
+            <div class="cards">
+                <!-- =================================================
+                     SERVICE 1 : PORTES EN ALUMINIUM
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/1.jpeg"
+                        alt="Portes en aluminium - Côté Alu-CI SARL">
+                    <!-- Contenu -->
+                    <div class="body">
+                        <h3>
+                            Portes en aluminium
+                        </h3>
+                        <p>
+                            Des portes robustes et élégantes pour
+                            logements, bureaux et commerces.
+                        </p>
+                        <!-- Bouton de devis -->
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Portes%20en%20aluminium."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 2 : FENÊTRES ALUMINIUM
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/2.jpeg"
+                        alt="Fenêtres aluminium - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Fenêtres aluminium
+                        </h3>
+                        <p>
+                            Des fenêtres adaptées à la lumière,
+                            à la ventilation et à une finition moderne.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Fenêtres%20aluminium."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 3 : BAIES VITRÉES
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/3.jpeg"
+                        alt="Baies vitrées - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Baies vitrées
+                        </h3>
+                        <p>
+                            De grandes ouvertures pour maximiser
+                            la lumière naturelle et valoriser vos espaces.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Baies%20vitrées."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 4 : PORTES À LA FRANÇAISE
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/4.jpeg"
+                        alt="Portes à la française - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Portes à la française
+                        </h3>
+                        <p>
+                            Des ouvertures élégantes pour façades
+                            et intérieurs.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Portes%20à%20la%20française."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 5 : PORTES COULISSANTES
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!--
+                        Image du service.
+                        IMPORTANT :
+                        Cette image remplace l'ancien fichier MP4
+                        qui était incorrectement placé dans <img>.
+                    -->
+                    <img
+                        src="Images/5.jpeg"
+                        alt="Portes coulissantes - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Portes coulissantes
+                        </h3>
+                        <p>
+                            Des solutions pratiques pour optimiser
+                            l'espace.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Portes%20coulissantes."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 6 : CLOISONS ALUMINIUM
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/6.jpeg"
+                        alt="Cloisons aluminium - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Cloisons aluminium
+                        </h3>
+                        <p>
+                            Des séparations fonctionnelles pour bureaux
+                            et espaces résidentiels.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Cloisons%20aluminium."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 7 : GARDE-CORPS
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/7.jpeg"
+                        alt="Garde-corps aluminium - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Garde-corps
+                        </h3>
+                        <p>
+                            Des solutions qui associent sécurité,
+                            finition et intégration architecturale.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Garde-corps."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 8 : VÉRANDAS
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/8.jpeg"
+                        alt="Vérandas aluminium - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Vérandas
+                        </h3>
+                        <p>
+                            Des espaces lumineux et confortables
+                            avec structures aluminium.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Vérandas."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+                <!-- =================================================
+                     SERVICE 9 : SUR MESURE & MUR RIDEAUX
+                     ================================================= -->
+                <article
+                    class="card service-card"
+                    data-aos="fade-up">
+                    <!-- Image du service -->
+                    <img
+                        src="Images/9.jpeg"
+                        alt="Mur rideau et ouvrages sur mesure - Côté Alu-CI SARL">
+                    <div class="body">
+                        <h3>
+                            Sur mesure & mur rideaux
+                        </h3>
+                        <p>
+                            Étude et réalisation d'ouvrages spécifiques
+                            et solutions de façade.
+                        </p>
+                        <a
+                            class="btn btn-black"
+                            style="margin-top:15px"
+                            href="https://wa.me/2250719913927?text=Bonjour%20Côté%20Alu-CI,%20je%20souhaite%20un%20devis%20pour%20Sur%20mesure%20%26%20mur%20rideaux."
+                            target="_blank"
+                            rel="noopener">
+                            Demander un devis
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ==========================================================
+         APPEL À L'ACTION
+         ========================================================== -->
+    <section class="section-sm bg-light">
+        <div class="container">
+            <div class="cta">
+                <!-- Petit titre -->
+                <div class="eyebrow">
+                    Besoin spécifique ?
+                </div>
+                <!-- Titre -->
+                <h2>
+                    Nous pouvons étudier votre projet.
+                </h2>
+                <!-- Description -->
+                <p>
+                    Dimensions, architecture, rénovation ou ouvrage
+                    particulier : contactez-nous pour une étude.
+                </p>
+                <!-- Bouton WhatsApp -->
+                <a
+                    class="btn btn-red"
+                    href="https://wa.me/2250719913927"
+                    target="_blank"
+                    rel="noopener">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Décrire mon projet
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ==========================================================
+         FOOTER
+         ========================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- =================================================
+                     INFORMATIONS ENTREPRISE
+                     ================================================= -->
+                <div>
+                    <!-- Logo du footer -->
+                    <div
+                        class="logo"
+                        style="margin-bottom:16px">
+                        <div class="logo-mark">
+                            CA
+                        </div>
+                        <div class="logo-text">
+                            <span>
+                                Côté Alu-CI SARL
+                            </span>
+                            <small>
+                                MENUISERIE ALUMINIUM
+                            </small>
+                        </div>
+                    </div>
+                    <!-- Description -->
+                    <p>
+                        Solutions modernes, esthétiques et durables
+                        en menuiserie aluminium pour vos projets
+                        en Côte d'Ivoire.
+                    </p>
+                </div>
+                <!-- =================================================
+                     NAVIGATION
+                     ================================================= -->
+                <div>
+                    <h3>
+                        Navigation
+                    </h3>
+                    <div class="footer-links">
+                        <a href="index.html">
+                            Accueil
+                        </a>
+                        <a href="a-propos.html">
+                            À propos
+                        </a>
+                        <a href="services.html">
+                            Nos services
+                        </a>
+                        <a href="realisations.html">
+                            Réalisations
+                        </a>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <!-- =================================================
+                     SERVICES DU FOOTER
+                     ================================================= -->
+                <div>
+                    <h3>
+                        Services
+                    </h3>
+                    <div class="footer-links">
+                        <a href="services.html">
+                            Portes aluminium
+                        </a>
+                        <a href="services.html">
+                            Fenêtres
+                        </a>
+                        <a href="services.html">
+                            Baies vitrées
+                        </a>
+                        <a href="services.html">
+                            Cloisons
+                        </a>
+                        <a href="services.html">
+                            Garde-corps
+                        </a>
+                    </div>
+                </div>
+                <!-- =================================================
+                     CONTACT
+                     ================================================= -->
+                <div>
+                    <h3>
+                        Contact
+                    </h3>
+                    <div class="footer-links">
+                        <!-- Téléphone -->
+                        <a href="tel:+2250584135569">
+                            05 84 13 55 69
+                        </a>
+                        <!-- Téléphone principal -->
+                        <a href="tel:+2250719913927">
+                            07 19 91 39 27
+                        </a>
+                        <!-- WhatsApp -->
+                        <a
+                            href="https://wa.me/2250719913927"
+                            target="_blank"
+                            rel="noopener">
+                            WhatsApp
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:cotealluminium@gmail.com">
+                            cotealluminium@gmail.com
+                        </a>
+                        <!-- Adresse -->
+                        <span>
+                            Port-Bouët — Anani Rond-point
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- ==================================================
+                 BAS DU FOOTER
+                 ================================================== -->
+            <div class="footer-bottom">
+                <span>
+                    ©
+                    <span data-year></span>
+                    Côté Alu-CI SARL.
+                    Tous droits réservés.
+                </span>
+                <span>
+                    Menuiserie aluminium • Côte d'Ivoire
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- ==========================================================
+         BOUTONS FLOTTANTS
+         ========================================================== -->
+    <div class="float-actions">
+        <!-- WhatsApp -->
+        <a
+            class="float-btn whatsapp"
+            href="https://wa.me/2250719913927"
+            target="_blank"
+            rel="noopener"
+            aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- Téléphone -->
+        <a
+            class="float-btn phone"
+            href="tel:+2250719913927"
+            aria-label="Appeler">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+    <!-- ==========================================================
+         JAVASCRIPT
+         ========================================================== -->
+    <!-- Bibliothèque AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- JavaScript principal -->
+    <script src="js/app.js"></script>
+</body>
+</html>
