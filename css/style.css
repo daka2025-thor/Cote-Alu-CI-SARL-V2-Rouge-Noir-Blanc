@@ -2,9 +2,9 @@
    VARIABLES GLOBALES
    ========================================================== */
 :root{
-  --red:#d71920;
+  --red:#d71919;
   --red-dark:#a80f15;
-  --red-light:#ef3b42;
+  --red-light:#3b41ef;
   --black:#080808;
   --black-2:#111111;
   --white:#ffffff;
@@ -221,7 +221,9 @@ button,input,textarea,select{font:inherit}
 /* ==========================================================
    SECTION STATISTIQUES
    ========================================================== */
-.stats{background:var(--red);color:#fff}
+.stats {background: #2563EB;
+  color: #fff;
+}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
 .stat{text-align:center;padding:18px}
 
