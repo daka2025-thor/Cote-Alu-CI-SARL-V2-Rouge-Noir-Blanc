@@ -478,4 +478,72 @@ button,input,textarea,select{font:inherit}
 
   /* Footer en colonne */
   .footer-bottom{flex-direction:column}
+}/* ==================================================
+GOOGLE MAPS : STYLE DE LA CARTE DE LOCALISATION
+================================================== */
+
+/*
+Conteneur de la carte.
+Il définit la hauteur, les bordures et l'apparence générale.
+*/
+.map-container {
+position: relative;
+width: 100%;
+height: 420px;
+margin-top: 25px;
+overflow: hidden;
+border-radius: 16px;
+background-color: #f1f1f1;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/*
+Iframe Google Maps.
+La carte occupe toute la surface du conteneur.
+*/
+.map-container .map {
+display: block;
+width: 100%;
+height: 100%;
+min-height: 0;
+border: 0;
+}
+
+/*
+Bouton permettant d'ouvrir la carte dans Google Maps.
+Le bouton est centré sous la carte.
+*/
+.map-link {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+/*
+Tablettes et téléphones.
+La hauteur de la carte est réduite pour mieux s'adapter.
+*/
+@media screen and (max-width: 768px) {
+
+```
+.map-container {
+    height: 320px;
+    border-radius: 12px;
+}
+```
+
+}
+
+/*
+Petits téléphones.
+La carte conserve une hauteur suffisante pour être utilisable.
+*/
+@media screen and (max-width: 480px) {
+
+```
+.map-container {
+    height: 260px;
+}
+```
+
 }
