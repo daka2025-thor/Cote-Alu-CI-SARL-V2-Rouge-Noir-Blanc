@@ -5,10 +5,12 @@
          CONFIGURATION GÉNÉRALE DE LA PAGE
          ========================================================== -->
     <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; script-src 'self' https://unpkg.com; connect-src 'self'; media-src 'self'; frame-src https://maps.google.com https://www.google.com; form-action 'self' https://wa.me; upgrade-insecure-requests">
     <!-- Adaptation automatique aux téléphones, tablettes et PC -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Couleur de la barre du navigateur sur mobile -->
-    <meta name="theme-color" content="#d71920">
+    <meta name="theme-color" content="#195fd7">
     <!-- Favicon du site -->
     <link rel="icon" href="Images/LOGO.jpeg" type="image/jpeg">
     <!-- ==========================================================
@@ -47,7 +49,7 @@
         rel="canonical"
         href="https://www.cotealu-ci.com/realisations.html">
 </head>
-<body>
+<body class="page-realisations">
     <!-- ==========================================================
          EN-TÊTE DU SITE
          ========================================================== -->
@@ -119,7 +121,7 @@
                         class="btn btn-red"
                         href="https://wa.me/2250719913927"
                         target="_blank"
-                        rel="noopener">
+                        rel="noopener noreferrer">
                         <i class="fa-brands fa-whatsapp"></i>
                         Devis WhatsApp
                     </a>
@@ -178,8 +180,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/3.jpg">
                         <source
                             src="Videos/3.mp4"
                             type="video/mp4">
@@ -201,8 +203,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/2.jpg">
 
                         <source
                             src="Videos/2.mp4"
@@ -234,8 +236,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/portes-coulissantes.jpg">
 
                         <source
                             src="Videos/portes coulissantes.mp4"
@@ -267,8 +269,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/5.jpg">
 
                         <source
                             src="Videos/5.mp4"
@@ -300,8 +302,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/6.jpg">
 
                         <source
                             src="Videos/6.mp4"
@@ -333,8 +335,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/7.jpg">
 
                         <source
                             src="Videos/7.mp4"
@@ -366,8 +368,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/8.jpg">
 
                         <source
                             src="Videos/8.mp4"
@@ -399,8 +401,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/9.jpg">
 
                         <source
                             src="Videos/9.mp4"
@@ -432,8 +434,8 @@
                     <video
                         controls
                         playsinline
-                        preload="metadata"
-                        poster="Images/LOGO.jpeg">
+                        preload="none"
+                        poster="Videos/posters/10.jpg">
 
                         <source
                             src="Videos/10.mp4"
@@ -492,7 +494,7 @@
                     class="btn btn-red"
                     href="https://wa.me/2250719913927"
                     target="_blank"
-                    rel="noopener">
+                    rel="noopener noreferrer">
 
                     <i class="fa-brands fa-whatsapp"></i>
                     Envoyer mon projet
@@ -656,7 +658,7 @@
                         <a
                             href="https://wa.me/2250719913927"
                             target="_blank"
-                            rel="noopener">
+                            rel="noopener noreferrer">
 
                             WhatsApp
 
@@ -717,7 +719,7 @@
             class="float-btn whatsapp"
             href="https://wa.me/2250719913927"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             aria-label="WhatsApp">
 
             <i class="fa-brands fa-whatsapp"></i>

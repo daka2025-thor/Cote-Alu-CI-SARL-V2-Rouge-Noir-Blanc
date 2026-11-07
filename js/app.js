@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.open(
         "https://wa.me/2250719913927?text=" + encodeURIComponent(text),
         "_blank",
-        "noopener"
+        "noopener,noreferrer"
       );
     });
   }

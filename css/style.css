@@ -525,12 +525,10 @@ La hauteur de la carte est réduite pour mieux s'adapter.
 */
 @media screen and (max-width: 768px) {
 
-```
 .map-container {
     height: 320px;
     border-radius: 12px;
 }
-```
 
 }
 
@@ -540,10 +538,235 @@ La carte conserve une hauteur suffisante pour être utilisable.
 */
 @media screen and (max-width: 480px) {
 
-```
 .map-container {
     height: 260px;
 }
-```
 
+}
+
+/* =====================================================
+   AFFICHAGE DES IMAGES — CÔTÉ ALU-CI SARL
+   ===================================================== */
+
+/* Image de présentation de l'entreprise */
+.visual-card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.visual-card img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    object-position: center;
+    background: #f5f5f5;
+    border-radius: inherit;
+}
+
+/* Galerie des réalisations */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.gallery-item {
+    position: relative;
+    min-width: 0;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #f3f3f3;
+    cursor: pointer;
+    isolation: isolate;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.06);
+}
+
+/* Légende des images */
+.gallery-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 18px 14px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+}
+
+/* Fenêtre d'agrandissement */
+#galleryModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    padding: 60px 20px 25px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+#galleryModal.active {
+    display: flex;
+}
+
+#modalImage {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 100px);
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+#galleryModal .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    padding: 5px 12px;
+    border: none;
+    color: white;
+    background: transparent;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Tablettes */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .gallery-item {
+        height: 260px;
+    }
+
+    .visual-card img {
+        height: 350px;
+    }
+}
+
+/* Téléphones */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-item {
+        height: 260px;
+    }
+
+    .visual-card img {
+        height: 280px;
+    }
+
+    #galleryModal {
+        padding: 55px 12px 15px;
+    }
+
+    #modalImage {
+        max-width: 100%;
+        max-height: calc(100vh - 85px);
+    }
+
+    #galleryModal .modal-close {
+        top: 8px;
+        right: 12px;
+    }
+}
+
+/* Galerie vidéo : vignettes nettes, commandes accessibles et cartes adaptées au mobile. */
+body.page-realisations .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+body.page-realisations .gallery-item {
+    display: flex;
+    height: auto;
+    min-width: 0;
+    flex-direction: column;
+    cursor: default;
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+body.page-realisations .gallery-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.16);
+}
+
+body.page-realisations .gallery-item video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #111;
+}
+
+body.page-realisations .gallery-item .gallery-caption {
+    position: static;
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    padding: 13px 16px;
+    color: var(--black);
+    font-weight: 750;
+    background: #fff;
+    border-top: 1px solid var(--gray-2);
+}
+
+body.page-realisations .gallery-item:focus-within {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    body.page-realisations .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    body.page-realisations .gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.page-realisations .gallery-item {
+        transition: none;
+    }
+
+    body.page-realisations .gallery-item:hover {
+        transform: none;
+    }
 }

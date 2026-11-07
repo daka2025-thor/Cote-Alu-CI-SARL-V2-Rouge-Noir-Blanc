@@ -7,15 +7,16 @@
          CONFIGURATION GÉNÉRALE DE LA PAGE
          ========================================= -->
 
-```
 <!-- Encodage des caractères pour afficher correctement les accents -->
 <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; script-src 'self' https://unpkg.com; connect-src 'self'; media-src 'self'; frame-src https://maps.google.com https://www.google.com; form-action 'self' https://wa.me; upgrade-insecure-requests">
 
 <!-- Adaptation de la page aux écrans mobiles et aux ordinateurs -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Couleur du navigateur sur les appareils compatibles -->
-<meta name="theme-color" content="#d71920">
+<meta name="theme-color" content="#195fd7">
 
 <!-- Icône du site affichée dans l'onglet du navigateur -->
 <link rel="icon" href="Images/LOGO.jpeg" type="image/jpeg">
@@ -62,13 +63,11 @@
 <link
     rel="canonical"
     href="https://www.cotealu-ci.com/contact.html">
-```
 
 </head>
 
 <body>
 
-```
 <!-- =========================================
      EN-TÊTE DU SITE
      Contient les coordonnées et le menu principal
@@ -354,7 +353,7 @@
                         <input
                             type="text"
                             id="name"
-                            name="name"
+                            name="name" maxlength="100"
                             required
                             autocomplete="name"
                             placeholder="Votre nom">
@@ -372,7 +371,7 @@
                         <input
                             type="tel"
                             id="phone"
-                            name="phone"
+                            name="phone" maxlength="32"
                             required
                             autocomplete="tel"
                             placeholder="07 XX XX XX XX">
@@ -443,7 +442,7 @@
 
                         <textarea
                             id="message"
-                            name="message"
+                            name="message" maxlength="3000"
                             required
                             placeholder="Dimensions, quantité, quartier, délai souhaité..."></textarea>
 
@@ -524,7 +523,7 @@
                 src="https://maps.google.com/maps?q=5.2365355%2C-3.8724734&z=16&output=embed"
                 title="Localisation de Côté Alu-CI SARL à Port-Bouët, Abidjan"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen>
             </iframe>
 
@@ -752,7 +751,6 @@
     - L'affichage automatique de l'année dans le pied de page.
 -->
 <script src="js/app.js"></script>
-```
 
 </body>
 
